@@ -1,0 +1,104 @@
+.book-card {
+  border: 1px solid white;
+  color: #1d232b;
+}
+
+.book-card img {
+  width: 187px;
+  height: 187px;
+  object-fit: fill;
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 10vw;
+}
+
+.details {
+  padding: 8px 0;
+  margin: 0 15px;
+}
+
+.details div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+}
+
+.details h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.details p {
+  margin: 0;
+}
+
+.offer {
+  color: #ff003e;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #080a0c;
+}
+
+.price span {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: -0.18px;
+  color: #1d232b;
+}
+
+/* Media query for larger screens */
+@media only screen and (min-width: 700px) {
+  .books {
+    margin: 0;
+  }
+}
+
+/* Refresh functionality styles */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.refresh-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 18px;
+  color: #888;
+}
+
+.refresh-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  animation: spin 1s linear infinite;
+}
